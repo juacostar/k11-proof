@@ -15,4 +15,4 @@ Para poder ejecutar la api es necesario:
 
 ## Consideraciones
 1. Para poder llenar la base de datos con los datos que se eencentran en la API del documento, se creó un servicio k11/users/fill, el cual llena con una de las dos páginas de la API que contienen datos (solo se encontraron las dos primeras páginas con datos de usuarios).
-2. Para el servicio para consultar un usuario por id se solicita los campos client_id y client_secret en el encabezado de la solicitud para poder validar la autenticidad de la petición. Para ello, en una tabal login de la base de datos se almacenaron, de tal manera que se consulta dicha tabla para validar la existencia de dichas credenciales.
+2. Para el servicio para consultar un usuario por id se solicita los campos client_id y client_secret en el encabezado de la solicitud para poder validar la autenticidad de la petición. Para ello, en una tabla llamada login de la base de datos se almacenaron, de tal manera que se consulta dicha tabla para validar la existencia de dichas credenciales y poder obtener la información requerida.
